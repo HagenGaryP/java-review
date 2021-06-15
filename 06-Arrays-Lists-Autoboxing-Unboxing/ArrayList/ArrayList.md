@@ -2,6 +2,25 @@
 
 The [ArrayList class](https://www.tutorialspoint.com/java/java_arraylist_class.htm) extends AbstractList and implements the List interface. ArrayList supports dynamic arrays that can grow as needed.
 
+#### Creating an ArrayList
+When declaring an ArrayList variable, you can specify the data type of the elements that the collection will hold with the following syntax: 
+```
+ArrayList<String> variableName;
+```
+**NOTE:** ArrayList is a kind of **List**, and **List** implements the **Collection** *interface*. The Collection container expects only Objects data types
+and all the operations done in Collections, like iterations, can be performed only on Objects and not Primitive data types.
+So, the data type specified within the "less-than" and "greater-than" signs **CANNOT BE A PRIMITIVE DATA TYPE**
+(Recall, the eight primitives defined in Java are *int, byte, short, long, float, double, boolean, and char*)
+
+But, since ArrayList is a class, we need to instantiate it with the *new* keyword.
+For example:
+```
+ArrayList<String> newArray = new ArrayList<String>();
+```
+Initializing the ArrayList without passing any parameters to the class constructor will create an empty list with an initial capacity of ten.
+
+<br />
+
 Standard Java arrays are of a fixed length. After arrays are created, they cannot grow or shrink, which means that you must know in advance how many elements an array will hold.
 
 Array lists are created with an initial size. When this size is exceeded, the collection is automatically enlarged. When objects are removed, the array may be shrunk.

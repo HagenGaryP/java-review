@@ -1,5 +1,8 @@
 package oop.Interfaces;
 
+/**
+ * This file is to show an example that would benefit from using an interface instead of the code shown here.
+ */
 public class Gearbox {
 
     private boolean clutchIsIn;

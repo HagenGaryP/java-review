@@ -9,11 +9,25 @@ package oop.Interfaces;
  So it's really a way to standardize how a particular set of classes is used.
 
 
+ *******    See "DeskPhone.java" file for the implementation of an interface.  ****
+
+ To implement an interface, use the "implements" keyword, followed by the interface name that you want to use.
+
+ Creating an instance of a class that implements an interface can by done by using the data type of the interface in the declaration.
+ For example: INameOfInterface varName = new NameOfClass();
+
  */
 
 public class Main {
 
     public static void main(String[] args) {
-        //
+        // Create an instance of the DeskPhone class but using the specified interface as a data type.
+//        ITelephone garysPhone; // variable declared as ITelephone interface data type.  Can do both in one line, as followed:
+        ITelephone garysPhone = new DeskPhone(1234567); // instantiating the DeskPhone class with a phone number passed in.
+
+        // calling some of the functions
+        garysPhone.powerOn();
+        garysPhone.callPhone(1234567);
+        garysPhone.answer();
     }
 }

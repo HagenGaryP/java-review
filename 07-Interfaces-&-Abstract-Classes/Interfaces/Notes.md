@@ -101,6 +101,7 @@ When overriding methods defined in interfaces, there are several rules to be fol
 - The signature of the interface method and the same return type or subtype should be maintained when overriding the methods.
 - An implementation class itself can be abstract and if so, interface methods need not be implemented.
 
+> Note: **Method Signatures** - Methods in Java support overloading, meaning that multiple methods with the same name can be defined in the same class or hierarchy of classes. Hence, the compiler must be able to statically bind the method the client code refers to. For this reason, the method signature uniquely identifies each method.  According to Oracle, **the method signature is comprised of the name and parameter types.** Therefore, all the other elements of the method's declaration, such as modifiers, return type, parameter names, exception list, and body are not part of the signature.
 
 When implementation interfaces, there are several rules −
 - A class can implement more than one interface at a time.

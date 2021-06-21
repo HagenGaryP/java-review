@@ -22,12 +22,19 @@ public class Main {
 
     public static void main(String[] args) {
         // Create an instance of the DeskPhone class but using the specified interface as a data type.
-//        ITelephone garysPhone; // variable declared as ITelephone interface data type.  Can do both in one line, as followed:
-        ITelephone garysPhone = new DeskPhone(1234567); // instantiating the DeskPhone class with a phone number passed in.
+        ITelephone garysPhone; // variable declared as ITelephone interface data type.  Can do both in one line, as followed:
+//        ITelephone garysPhone = new DeskPhone(1234567); // instantiating the DeskPhone class with a phone number passed in.
+        garysPhone = new DeskPhone(1234567);
 
         // calling some of the functions
+//        garysPhone.powerOn();
+//        garysPhone.callPhone(1234567);
+//        garysPhone.answer();
+
+        // setting phone variable to a cell, using MobilePhone class
+        garysPhone = new MobilePhone(7654321);
         garysPhone.powerOn();
-        garysPhone.callPhone(1234567);
+        garysPhone.callPhone(7654321);
         garysPhone.answer();
     }
 }

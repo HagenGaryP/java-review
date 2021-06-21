@@ -15,7 +15,7 @@ package oop.Interfaces;
  *
  */
 public class DeskPhone implements ITelephone {
-    // manually typing methods
+
     private int myNumber;
     private boolean isRinging;
 
